@@ -1,12 +1,12 @@
 There are three Python programs here (`-h` for usage):
 
- - `./rerank` chooses the best candidate translations from a k-best list using a linear model.
+ - `./simplex` chooses the best candidate translations from a k-best list using the simplex model.
  - `./oracle` computes a lower bound of BLEU on the development data.
  - `./compute-bleu` computes the BLEU score of a set of translations.
 
 The commands are designed to work in a pipeline. For instance, these are valid invocations:
 
-    python rerank | python compute-bleu
+    python simplex | python compute-bleu
 
     python oracle | python compute-bleu
 
